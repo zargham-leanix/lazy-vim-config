@@ -5,7 +5,7 @@ return {
     {
       "<leader>e",
       function()
-        require("neo-tree.command").execute({ toggle = false, dir = LazyVim.root() })
+        require("neo-tree.command").execute({ toggle = false, dir = vim.uv.cwd() })
       end,
       desc = "Explorer NeoTree (Root Dir)",
     },
