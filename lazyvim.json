@@ -1,7 +1,8 @@
 {
   "extras": [
     "lazyvim.plugins.extras.formatting.prettier",
-    "lazyvim.plugins.extras.linting.eslint"
+    "lazyvim.plugins.extras.linting.eslint",
+    "lazyvim.plugins.extras.test.core"
   ],
   "news": {
     "NEWS.md": "3314"
