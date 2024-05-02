@@ -1,7 +1,10 @@
 return {
   -- add gruvbox
-  { "navarasu/onedark.nvim", opts = {
-    style = "deep",
+  { "olimorris/onedarkpro.nvim", opts = {
+
+    colors = {
+      onedark = { bg = "#17191e" },
+    },
   } },
 
   -- Configure LazyVim to load gruvbox
