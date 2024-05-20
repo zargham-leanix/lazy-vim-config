@@ -3,7 +3,7 @@ return {
   { "olimorris/onedarkpro.nvim", opts = {
 
     colors = {
-      onedark = { bg = "#17191e" },
+      onedark = {},
     },
   } },
 
