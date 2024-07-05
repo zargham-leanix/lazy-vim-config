@@ -1,9 +1,10 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.test.core",
     "lazyvim.plugins.extras.editor.harpoon2",
     "lazyvim.plugins.extras.formatting.prettier",
-    "lazyvim.plugins.extras.linting.eslint"
+    "lazyvim.plugins.extras.lang.angular",
+    "lazyvim.plugins.extras.linting.eslint",
+    "lazyvim.plugins.extras.test.core"
   ],
   "news": {
     "NEWS.md": "6077"
