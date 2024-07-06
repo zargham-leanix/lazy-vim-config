@@ -6,3 +6,4 @@ vim.opt.scrolloff = 200 -- keep curson in middle
 vim.opt.hidden = true -- don't know what it does
 vim.opt.sidescrolloff = 8
 vim.g.blamer_enabled = true
+vim.opt.relativenumber = false
