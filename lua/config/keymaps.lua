@@ -4,11 +4,16 @@
 
 local opts = { noremap = true, silent = true }
 -- Shorten function name
-
-local keymap = vim.api.nvim_set_keymap
+local map = vim.keymap.set
 
 -- keep the yank when pasting over selection
-keymap("v", "p", '"_dP', opts)
+map("v", "p", '"_dP', opts)
 
 -- source neovim after changing config
-keymap("n", "<leader>sv", ":luafile $MYVIMRC<CR>", opts)
+map("n", "<leader>sv", ":luafile $MYVIMRC<CR>", opts)
+
+-- Copy file name
+map("n", "<leader>bc", ':let @+= expand("%:t")<cr>', { desc = "Copy file name" })
+
+-- Copy file path
+map("n", "<leader>bC", ':let @+= expand("%")<cr>', { desc = "Copy file path" })
