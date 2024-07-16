@@ -11,6 +11,20 @@ return {
     },
   },
   opts = {
+    window = {
+      mappings = {
+        ["F"] = {
+          function(state)
+            local node = state.tree:get_node()
+            if not node then
+              return
+            end
+            require("telescope.builtin").live_grep({ search_dirs = { node.path } })
+          end,
+          desc = "Find in folder",
+        },
+      },
+    },
     filesystem = {
       filtered_items = {
         visible = true,
