@@ -14,7 +14,12 @@ return {
         enabled = true,
         settings = {
           vtsls = {
-            autouseworkspacetsdk = false,
+            autouseworkspacetsdk = true,
+            typescript = {
+              tsserver = {
+                maxTsServerMemory = 8192,
+              },
+            },
           },
         },
       },
